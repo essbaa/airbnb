@@ -59,7 +59,7 @@ const Modal: React.FC<Props> = ({
   }, [disabled, secondaryAction]);
 
   if (!isOpen) {
-    null;
+    return null;
   }
 
   return (
@@ -102,6 +102,7 @@ const Modal: React.FC<Props> = ({
                     onClick={handleSubmit}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
